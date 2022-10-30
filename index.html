@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="start-page" id="startPage">
+      <div class="word-input-container">
+        <h1>Welcome to Hangman!</h1>
+        <h2>Choose a word you'd like to play</h2>
+        <form class="word-input-form" id="wordInputForm">
+          <input type="text" name="chooseWordInputField" />
+          <button type="submit">Choose word!</button>
+        </form>
+        <div class="error-message" id="errorMessage"></div>
+      </div>
+    </div>
+    <div class="hangman-game invisible" id="hangmanGame">
+      <section class="hangman-game__wrapper">
+        <div class="hangman-game__wrapper--img"></div>
+        <div class="hangman-game__wrapper--display-word"></div>
+        <div class="hangman-game__wrapper--display-wrong-guesses"></div>
+        <div class="hangman-game__wrapper--letter-input-container">
+          <form type="text" class="letter-input-form">
+            <input type="text" name="guessLetterInputField" />
+            <button type="submit">Guess letter!</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <script src="hangman-game-test-2.js"></script>
+  </body>
+</html>
